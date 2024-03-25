@@ -22,6 +22,8 @@ export async function getStaticPaths() {
 // Get the current post's data
 const { post } = Astro.props;
 
+const { Content } = await post.render();
+
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog");
 
@@ -33,7 +35,7 @@ const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
   (blogEntry) => blogEntry.slug !== post.slug
 );
 ---
-
+   
 <MainLayout title={post.data.title + " | ScrewFast"}>
   <section class="mx-auto max-w-3xl px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-10">
     <div class="max-w-2xl">
@@ -79,8 +81,10 @@ const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
       <!--Blog post contents-->
       <div class="mb-5 space-y-5 md:mb-8 md:space-y-8">
         {
-          post.data.contents.map((content: string, index: any) =>
-            index === 1 ? (
+          post.data.contents.map((content: string, index: any) =>{
+          console.log('navid data=',post);
+          
+            return index === 1 ? (
               <>
                 <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">
                   {content}
@@ -97,10 +101,11 @@ const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
               <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">
                 {content}
               </p>
-            )
+            )}
           )
         }
       </div>
+      <Content />
       <div
         class="mx-auto grid max-w-screen-lg gap-y-5 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
       >
