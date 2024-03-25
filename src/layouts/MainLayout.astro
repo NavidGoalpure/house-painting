@@ -26,7 +26,7 @@ We set the language of the page to English and add classes for scrollbar and scr
     <Meta meta={meta} structuredData={structuredData} />
     <!-- Define the title of the page -->
     <title>{title}</title>
-    <ViewTransitions/>
+    <ViewTransitions  fallback="swap"/>
     <script is:inline>
       // Script to handle dark mode. It will check if the theme is stored in localStorage or if dark theme is preferred by system settings
       if (
