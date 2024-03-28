@@ -27,11 +27,11 @@
 }
 /* image1 */
 .hero-image-group {
+  display: none;
   text-align: right;
   position: relative;
   margin-right: 100px;
   z-index: 3;
-  width: 500px;
   margin-left: auto;
 }
 .group-image1 {
@@ -98,4 +98,28 @@
   top: 2rem;
   left: -1rem;
   scale: 2;
+}
+/* ///////////Tablet/////////////// */
+@media only screen and (min-width: 768px) {
+  /* Tablet */
+  .hero-image-group {
+    display: block; /* or any other desired display property */
+    width: 14rem;
+    margin-right: 0;
+  }
+  .group-image2 {
+    display: none;
+  }
+}
+/* ///////////Laptop/////////////// */
+@media only screen and (min-width: 1024px) {
+  /* Tablet */
+  .hero-image-group {
+    display: block; /* or any other desired display property */
+    width: 500px;
+    margin-right: 0;
+  }
+  .group-image2 {
+    display: block;
+  }
 }
