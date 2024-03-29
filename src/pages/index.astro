@@ -3,7 +3,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroSection from "../components/sections/landing/heroSection/index.astro";
 import HeroSectionAlt from "../components/sections/landing/HeroSectionAlt.astro";
-import ClientsSection from "../components/sections/landing/ClientsSection.astro";
+import ClientsSection from "../components/sections/landing/ClientsSection/index.astro";
 import FeaturesGeneral from "../components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "../components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "../components/sections/testimonials/TestimonialsSection.astro";
@@ -47,10 +47,10 @@ const avatarSrcs: Array<string> = [
 
   <ClientsSection
     title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+    subTitle="Experience the reliability chosen by industry leaders."
   />
 
-  <FeaturesGeneral />
+  <!-- <FeaturesGeneral /> -->
 
   <FeaturesNavs />
 
@@ -96,7 +96,7 @@ const avatarSrcs: Array<string> = [
   <FAQ />
 
   <HeroSectionAlt
-    title="Let's Build Together"
+    title="Make Brand As Brilliant One"
     subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
     url="https://github.com/mearashadowfax/ScrewFast"
   />

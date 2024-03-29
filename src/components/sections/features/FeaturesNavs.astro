@@ -2,8 +2,9 @@
 // Import the necessary dependencies
 import TabNav from "../../ui/blocks/TabNav.astro";
 import TabContent from "../../ui/blocks/TabContent.astro";
-import construction from "../../../images/construction-image.avif";
-import dashboard from "../../../images/dashboard-image.avif";
+import DigitalMarketing from "./images/digital-marketing.avif";
+import WebDevelopment from "./images/web-development.avif";
+import WebDesign from "./images/web-design.avif";
 
 // Define the variable for the section's heading
 const title: string = `Services we’re providing to our customers`;
@@ -31,7 +32,7 @@ const title: string = `Services we’re providing to our customers`;
             dataTab="#tabs-with-card-1"
             aria="tabs-with-card-1"
             heading="Website development"
-            content="Providing the best solutions for your website."
+            content="Elevating your online presence with custom web solutions tailored to your unique vision."
             first={true}
           >
            <svg stroke="currentColor" 
@@ -51,7 +52,7 @@ const title: string = `Services we’re providing to our customers`;
             dataTab="#tabs-with-card-2"
             aria="tabs-with-card-2"
             heading="Graphic designing"
-            content="Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management."
+            content="Creating impactful visuals that communicate your brand's message with clarity and creativity."
           >
             <svg
               class="mt-2 h-6 w-6 flex-shrink-0 fill-neutral-700 hs-tab-active:fill-[#fa5a15] dark:fill-neutral-300 dark:hs-tab-active:fill-[#fb713b] md:h-7 md:w-7"
@@ -69,7 +70,7 @@ const title: string = `Services we’re providing to our customers`;
             dataTab="#tabs-with-card-3"
             aria="tabs-with-card-3"
             heading="Digital marketing"
-            content="Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence."
+            content="Elevating your brand's online presence with data-driven digital marketing solutions that deliver results."
           >
             <svg
               class="h-6 w-6 flex-shrink-0 text-neutral-700 hs-tab-active:text-[#fa5a15] dark:text-neutral-300 dark:hs-tab-active:text-[#fb713b] md:h-7 md:w-7"
@@ -95,21 +96,21 @@ const title: string = `Services we’re providing to our customers`;
             <TabContent
               id="tabs-with-card-1"
               aria="tabs-with-card-item-1"
-              src={dashboard}
+              src={WebDevelopment}
               alt="Yellow and black heavy equipment on brown grass field"
               first={true}
             />
             <TabContent
               id="tabs-with-card-2"
               aria="tabs-with-card-item-2"
-              src={dashboard}
+              src={WebDesign}
               alt="A screenshot or graphic representation of the intuitive dashboard"
               second={true}
             />
             <TabContent
               id="tabs-with-card-3"
               aria="tabs-with-card-item-3"
-              src={construction}
+              src={DigitalMarketing}
               alt="Gray metal building frame near tower crane during daytime"
             />
           </div>
