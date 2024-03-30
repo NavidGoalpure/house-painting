@@ -1,12 +1,12 @@
 ---
-title: "Simplify Procurement and Stay Within Budget with ScrewFast"
+title: "Examining the digital transformation of customer experience from the perspective of various channels and customer contact points"
 description: "Affordable, durable tools for efficient construction projects"
 author: "Olga Zabegina"
 role: "Strategic Marketing Manager"
-authorImage: "../../images/blog/anna.avif"
+authorImage: "../../../images/blog/anna.avif"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-18
-cardImage: "../../images/blog/post-3.avif"
+cardImage: "./mainImage.png"
 cardImageAlt: "Side view worker wearing gloves"
 readTime: 3
 tags: ["procurement", "affordable", "efficiency"]
