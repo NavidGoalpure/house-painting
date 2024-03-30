@@ -5,9 +5,8 @@ import EmailFooterInput from "../ui/forms/input/EmailFooterInput.astro";
 import { footerLinks, socialLinks } from "../../utils/navigation.ts";
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = "Stay up to date";
-const sectionThreeContent: string =
-  "Stay updated with the latest tools and exclusive deals.";
+const sectionThreeTitle: string = "Contact Us";
+
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">
@@ -104,12 +103,9 @@ const sectionThreeContent: string =
           {sectionThreeTitle}
         </h3>
 
-        <form>
-          <EmailFooterInput />
-          <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-            {sectionThreeContent}
+          <p class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-none dark:focus:ring-1">
+            navid@azarnoosh.com
           </p>
-        </form>
       </div>
     </div>
 
@@ -123,7 +119,7 @@ const sectionThreeContent: string =
             class="font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none rounded-lg focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
             href="https://sobstvennoai.dev"
             target="_blank"
-            rel="noopener noreferrer">sobstvennoAI</a
+            rel="noopener noreferrer">navid company name</a
           >.
         </p>
       </div>

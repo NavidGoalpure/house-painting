@@ -15,14 +15,14 @@ type Product = {
   cents: string;
   billingFrequency: string;
   features: Array<string>;
-  purchaseBtnTitle: string;
+  // purchaseBtnTitle: string;
   purchaseLink: string;
 };
 // Define two products for display - Starter Kit and Professional Toolbox.
 const starterKit: Product = {
   name: "Starter Kit",
   description: "Best option for small companies or self-tradies",
-  price: "$49",
+  price: "$99",
   cents: ".00",
   billingFrequency: "USD / monthly",
   features: [
@@ -31,7 +31,7 @@ const starterKit: Product = {
     "Basic SEO optimisation",
     "Best Speed and Performance"
   ],
-  purchaseBtnTitle: "Get the Starter Kit",
+  // purchaseBtnTitle: "Get the Starter Kit",
   purchaseLink: "#",
 };
 
@@ -48,7 +48,7 @@ const professionalToolbox: Product = {
     "Crafting Personalized Marketing Strategies for Your Success",
     "Drive Growth with Proactive Marketing Solutions",
   ],
-  purchaseBtnTitle: "Get the Professional Toolbox",
+  // purchaseBtnTitle: "Get the Professional Toolbox",
   purchaseLink: "#",
 };
 ---
@@ -114,11 +114,11 @@ const professionalToolbox: Product = {
         }
       </ul>
       <!-- CTA for purchasing the product -->
-      <a
+      <!-- <a
         href={starterKit.purchaseLink}
         class="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-bold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-gray-300 md:text-base"
         >{starterKit.purchaseBtnTitle}</a
-      >
+      > -->
     </div>
     <!-- Professional Toolbox product details -->
     <div
@@ -174,11 +174,11 @@ const professionalToolbox: Product = {
         }
       </ul>
       <!-- CTA for purchasing the product -->
-      <a
+      <!-- <a
         href={professionalToolbox.purchaseLink}
         class="block rounded-lg bg-orange-200 bg-opacity-50 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-orange-300 transition duration-100 hover:bg-orange-300 hover:bg-opacity-50 focus-visible:ring active:bg-orange-400 md:text-base"
         >{professionalToolbox.purchaseBtnTitle}</a
-      >
+      > -->
     </div>
   </div>
   <!-- Call to action for Enterprise Solutions -->
@@ -187,6 +187,6 @@ const professionalToolbox: Product = {
       Enterprise Solutions?
     </p>
 
-    <SecondaryCTA title="Get a Custom Quote" url="#" />
+    <SecondaryCTA title="Get a Custom Quote" url="/contact" />
   </div>
 </section>

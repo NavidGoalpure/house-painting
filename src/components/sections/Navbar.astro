@@ -2,13 +2,13 @@
 //Import relevant dependencies
 import ThemeIcon from "../ThemeIcon.astro";
 import NavLink from "../ui/links/NavLink.astro";
-import Authentication from "./Authentication.astro";
 import { navBarLinks } from "../../utils/navigation.ts";
 ---
 
 <!-- Main header component -->
 <header
   class="sticky inset-x-0 top-4 z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start"
+  style="height: 4rem;"
 >
   <!-- Navigation container -->
   <nav
@@ -135,11 +135,10 @@ import { navBarLinks } from "../../utils/navigation.ts";
           <NavLink url={link.url} name={link.name} />
         ))}
 
-        <Authentication />
         <!-- ThemeIcon component specifically for larger screens -->
-        <span class="hidden md:inline-block">
+        <!-- <span class="hidden md:inline-block">
           <ThemeIcon />
-        </span>
+        </span> -->
       </div>
     </div>
   </nav>
