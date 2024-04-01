@@ -31,10 +31,10 @@ interface Props {
   <div class="sm:order-1">
     <!-- Blog title which is also a hyperlink to the blog detail page  -->
     <h2
-      class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-3xl lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight"
+      class="text-balance text-2xl font-bold tracking-tight text-neutral-800  md:text-3xl lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight"
     >
       <a
-        class="outline-none ring-zinc-500 transition duration-300 hover:text-[#fa5a15] focus-visible:ring dark:text-neutral-300 dark:ring-zinc-200 dark:hover:text-neutral-50 dark:focus:outline-none"
+        class="outline-none ring-zinc-500 transition duration-300 hover:text-[#fa5a15] focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-50 "
         href={`/blog/${blogEntry.slug}/`}
       >
         {blogEntry.data.description}
@@ -45,7 +45,7 @@ interface Props {
       <AvatarBlogLarge blogEntry={blogEntry} />
 
       <div class="ms-3 sm:ms-4">
-        <p class="font-bold text-neutral-800 dark:text-neutral-200 sm:mb-1">
+        <p class="font-bold text-neutral-800  sm:mb-1">
           {blogEntry.data.author}
         </p>
         <p class="text-xs text-neutral-500">

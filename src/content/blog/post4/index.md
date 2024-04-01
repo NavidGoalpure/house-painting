@@ -1,14 +1,17 @@
 ---
-title: "Maximizing Efficiency with ScrewFast's Cutting-Edge Tools"
-description: "Innovating Construction Efficiency with Precision Tools & Support"
-author: "Jacob"
-authorImage: "../../../images/blog/jacob.avif"
+title: "Case Study: Sydney Builder - Transforming Homes, Elevating Experiences
+Client Background"
+description: "
+Our client, a premier Sydney builder, specializes in transforming homes to enhance living experiences through their unmatched craftsmanship and innovative approach, setting the standard for excellence in the industry."
+author: "Olga Zabegina"
+role: "Strategic Marketing Manager"
+authorImage: "../../../images/blog/anna.avif"
 authorImageAlt: "Avatar Description"
-pubDate: 2024-02-06
+pubDate: 2024-02-18
 cardImage: "./mainImage.png"
-cardImageAlt: "Top view mechanical tools arrangement"
-readTime: 4
-tags: ["tools", "construction", "workflow"]
+cardImageAlt: "Side view worker wearing gloves"
+readTime: 3
+tags: ["case-study", "affordable", "efficiency"]
 ---
 
 ## Client Background:
